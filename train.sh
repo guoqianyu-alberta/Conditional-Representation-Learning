@@ -1,0 +1,2 @@
+#!/bin/bash
+torchrun --nnodes=1 --nproc_per_node=4 --master_port=22194 train.py --image_size 224 --model_architecture 'not_share_weight' --attn_hidden_dim 640 --avg_pool --train_bsz 80 --num_layer 1 --transform_method 'C'  --n_shot 1 --eval_episodes 50 --epochs 1000 --input_channel 384 --backbone "Resnet12" --load '' --pretrained_path 'train_backbone/resnet12/model_best.pth.tar'  --train_dataset "ImageNet"  --lr 1e-3  --logging --neptune --ablation
