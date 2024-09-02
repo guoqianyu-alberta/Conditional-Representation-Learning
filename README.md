@@ -36,6 +36,8 @@ Link to backbone and checkpoints: [password: 5wbz ](https://pan.baidu.com/s/1Q3I
 # Datasets
 We provide evaluation datasets in the link below. Put data in `/data/datasets folder`.
 
+Link to dataset: [pwd: t662](https://pan.baidu.com/s/1ldjhuK0DFIDogmLctVPM6w)
+
 
 
 # Training
