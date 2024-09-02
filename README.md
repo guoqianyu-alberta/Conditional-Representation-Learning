@@ -1,5 +1,10 @@
 # CRLNet
 
+PyTorch implementation for "**Enhancing Environmental Robustness in Few-shot Learning via Conditional Representation Learning**"
+
+![image](https://github.com/user-attachments/assets/068dec8e-4348-49dc-909e-2ba82a5f9455)
+
+
 # Requirements
 fvcore==0.1.5
  
@@ -41,8 +46,15 @@ Link to dataset: [pwd: t662](https://pan.baidu.com/s/1ldjhuK0DFIDogmLctVPM6w)
 
 
 # Training
-We provide the training code for miniImageNet and ImageNet. Note that for training, two pickle files should be prepared for the training datset
+Note that for training, two pickle files should be generated: 
 
+(1) pickle file contains paths for all the images in training dataset 
+
+(2) pickle file contains paths organized by categories
+
+
+
+We also provide the training code for miniImageNet and ImageNet, run:
 ~~~python
 torchrun --nnodes=1 --nproc_per_node={gpu_num} --master_port=20000 train.py  --image_size 224 --train_bsz 80 --epochs 100 --backbone Resnet12 --train_dataset {ImageNet/miniImageNet} --lr 1e-3  
 ~~~
