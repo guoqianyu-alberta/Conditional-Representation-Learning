@@ -20,7 +20,8 @@ torchvision==0.15.2+cu118
 tqdm==4.66.4
 # Pretrained Weights
 Pretrained backbone and CRLNet checkpoints are available. Put backbone in  `/pretrained` and put checkpoints in `/checkpoints` . Accuracy of 5-way 1-shot, 5-way 5-shot and 5-way 10-shot shown in the table is evaluated separately on each dataset. 
-[password: 5wbz ](https://pan.baidu.com/s/1Q3ICj3zaJIldKg6DQfh68g)
+
+Link to backbone and checkpoints: [password: 5wbz ](https://pan.baidu.com/s/1Q3ICj3zaJIldKg6DQfh68g)
 
 | dataset | 1-shot | 5-shot | 10-shot |
 | ------- | ------ | ------ | ------- |
@@ -34,6 +35,8 @@ Pretrained backbone and CRLNet checkpoints are available. Put backbone in  `/pre
 
 # Datasets
 We provide evaluation datasets in the link below. Put data in `/data/datasets folder`.
+
+
 
 # Training
 
