@@ -41,11 +41,20 @@ Link to dataset: [pwd: t662](https://pan.baidu.com/s/1ldjhuK0DFIDogmLctVPM6w)
 
 
 # Training
+We provide the training code for miniImageNet and ImageNet. Note that for training, two pickle files should be prepared for the training datset
+
+~~~python
+torchrun --nnodes=1 --nproc_per_node={gpu_num} --master_port=20000 train.py  --image_size 224 --train_bsz 80 --epochs 100 --backbone Resnet12 --train_dataset {ImageNet/miniImageNet} --lr 1e-3  
+~~~
+or directly run:
+~~~python
+./train.sh
+~~~
 
 # Evaluation
 To evaluate the performance on different datasets and settings, run:
 ~~~python
-python test.py --n_shot {1/5/10} --backbone {Resnet12/Resnet50/ViT} --pretrained_path path_to_pretrained_model --load path_to_checkpoint --eval_dataset dataset_name  --eval_episodes 600 --gpu gpu_id
+python test.py --n_shot {1/5/10} --backbone Resnet12 --pretrained_path path_to_pretrained_model --load path_to_checkpoint --eval_dataset dataset_name  --eval_episodes 600 --gpu gpu_id
 ~~~
 or directly run:
 ~~~python
