@@ -18,8 +18,15 @@ torch==2.0.1+cu118
 torchvision==0.15.2+cu118
  
 tqdm==4.66.4
+# Pretrained Weights
+Pretrained backbone and CRLNet checkpoints for Resnet12 are available. Put backbone in /pretrained and put checkpoints in /checkpoints .
+
+
 # Datasets
+We provide evaluation datasets in the link below. Put data in /data/datasets folder.
+
 # Training
+
 # Evaluation
 To evaluate the performance on different datasets and settings, run:
 ~~~python
