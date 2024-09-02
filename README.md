@@ -73,3 +73,6 @@ or directly run:
 ./test.sh
 ~~~
 
+# LICENSE
+This repository is released under the MIT license as found in the [LICENSE](LICENSE) file.
+
