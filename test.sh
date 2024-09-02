@@ -1,2 +1,0 @@
-#!/bin/bash
-torchrun --nnodes=1 --nproc_per_node=1 --master_port=22140 test.py --n_shot 5 --method 5 --model_architecture 'test_model' --ablation_type "kshot" --input_channel 384 --backbone 'Resnet12'  --load './log/train/Resnet12/ImageNet_test_model_0128_234723/best_model.pt' --pretrained_path './train_backbone/resnet12/model_best.pth.tar' --avg_pool --ablation
